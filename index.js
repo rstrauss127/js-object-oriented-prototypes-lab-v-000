@@ -1,16 +1,18 @@
  function BoardMember(name, homeState, training){
-   this.name = name
-   this.homeState = homeState
-   this.training = training
+   this.name = name;
+   this.homeState = homeState;
+   this.training = training;
  }
 
   BoardMember.prototype.veto = function(){
-       return 'No, I must disagree'
+       return 'No, I must disagree';
      }
-  this.approve = function(){
+
+  BoardMember.prototype.approve = function(){
     return 'You can do that!'
    }
-   this.doCharity = function(){
+
+   BoardMember.prototype.doCharity = function(){
      return "I like to help people."
    }
 
